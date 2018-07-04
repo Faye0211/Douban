@@ -1,0 +1,18 @@
+<view class='search-box'>
+  <icon type="search"></icon>
+  <input bindconfirm='searchMovie' placeholder="请输入电影" confirm-type='search'></input>
+</view>
+<view class="movie-container">
+  <view class='item' wx:for='{{subjects}}'>
+    <image class="ima" src='{{item.images.small}}'></image>
+    <text>{{item.title}}</text>
+    <view class='score'>
+      <block wx:for='{{item.starArr}}' wx:for-item='i'>
+        <image wx:if='{{i}}' src='/img/star.png'></image>
+        <image wx:else src='/img/none-star.png'></image>
+
+      </block>
+      <text>{{item.rating.average}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+.search-box{
+  display: flex;
+  background: #ff00ff;
+  padding: 20rpx;
+}
+.search-box input{
+  flex:1;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 27rpx;
+}
+
+.movie-container .item {
+  width: 33.33333333%;
+  flex-direction: column;
+  padding-top: 37rpx;
+  box-sizing: border-box;
+}
+.movie-container .item .ima {
+  width: 200rpx;
+  height: 270rpx;
+  padding-bottom: 20rpx;
+}
+
+.movie-container .item image {
+    width: 14rpx;
+   height: 14rpx;
+
+}
+.movie-container .item text{
+  display: block;
+  font-size: 23rpx;
+
+}
+.movie-container .item .score {
+  display: flex;
+
+}
+.movie-container .item .score .star{
+  display: inline-block;
+  width: 14rpx;
+  height: 14rpx;
+}
+
+.movie-container .score text{
+  font-size: 16rpx;
+}

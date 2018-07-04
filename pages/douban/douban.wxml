@@ -1,0 +1,23 @@
+<view class='search-box'>
+  <icon type="search"></icon>
+  <input bindtap='toSearch' placeholder="请输入电影" confirm-type='search'></input>
+</view>
+<view class="movie-container">
+  <block wx:for="{{subjects}}">
+    <view bindtap='toDetail' data-id="{{item.id}}" class="item">
+      <!--电影图片  -->
+      <image src="{{item.images.small}}"></image>
+      <!--电影标题  -->
+      <text>{{item.title}}</text>
+      <view class='score'>
+        <block wx:for="{{item.starsArr}}" wx:for-item="i">
+          <!-- 循环星星数组 如果是1 有星星 如果是0 灰星星  -->
+          <image wx:if="{{i}}" src="/img/star.png"></image>
+          <image wx:else src="/img/none-star.png"></image>
+        </block>
+        <text>{{item.rating.average}}</text>
+      </view>
+    </view>
+  </block>
+
+</view>

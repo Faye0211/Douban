@@ -1,0 +1,43 @@
+page{
+  padding-top: 30rpx;
+  padding-left: 27rpx;
+}
+.title{
+  font-size:46rpx;
+  font-weight: 700;
+}
+.info-box{
+  display: flex;
+}
+.info-left{}
+.info-left .comments-box{
+  display: flex;
+  align-items: center;
+}
+.info-left .comments-box image{
+  width:30rpx;
+  height: 30rpx;
+}
+.info-left .comments-box .score{
+  font-size:30rpx;
+  margin: 0 30rpx;
+}
+.info-left .comments-box .comment-num{
+  font-size:30rpx;
+  color:#bbcbdd;
+}
+.info-left .desc{
+  margin-top: 50rpx;
+  width: 430rpx;
+  font-size:30rpx;
+  display: block;
+}
+.info-right{
+  flex: 1;
+}
+.info-right image{
+  width:200rpx;
+  height: 285rpx;
+  display: block;
+  margin: 0 auto;
+}

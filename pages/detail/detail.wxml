@@ -1,0 +1,18 @@
+<text class="title">{{movieData.title}}</text>
+<view class='info-box'>
+  <view class='info-left'>
+    <view class='comments-box'>
+      <image src="/img/star.png"></image>
+      <image src="/img/star.png"></image>
+      <image src="/img/star.png"></image>
+      <image src="/img/star.png"></image>
+      <image src="/img/star.png"></image>
+      <text class='score'>{{movieData.rating.average}}</text>
+      <text class='comment-num'>{{movieData.comments_count}}人评价</text>
+    </view>
+    <text class='desc'>{{movieData.summary}}</text>
+  </view>
+  <view class='info-right'>
+    <image src="{{movieData.images.small}}"></image>
+  </view>
+</view>
